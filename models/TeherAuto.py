@@ -1,17 +1,9 @@
-from Auto import Auto
+from models.Auto import Auto
 
 class Teherauto(Auto):
-    def __init__(self, rendszam: str, tipus: str, berleti_dij: float,
-                 teherbiras: float, tengelyek_szama: int):
+    def __init__(self, rendszam, tipus, berleti_dij, teherbiras):
         super().__init__(rendszam, tipus, berleti_dij)
-        self.teherbiras = teherbiras
-        self.tengelyek_szama = tengelyek_szama
+        self._teherbiras = teherbiras
 
     def info(self):
-        return (
-            f"Teherautó - {self.tipus}\n"
-            f"Rendszám: {self.rendszam}\n"
-            f"Bérleti díj: {self.berleti_dij} Ft/nap\n"
-            f"Teherbírás: {self.teherbiras} kg\n"
-            f"Tengelyek száma: {self.tengelyek_szama}"
-        )
+        return f"[Teherautó] {self._tipus} | {self._rendszam} | {self._berleti_dij} Ft/nap | {self._teherbiras} kg"
