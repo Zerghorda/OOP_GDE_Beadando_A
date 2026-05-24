@@ -1,5 +1,4 @@
 from models.Berles import Berles
-from datetime import datetime
 
 
 class Autokolcsonzo:
@@ -25,7 +24,7 @@ class Autokolcsonzo:
                 return False
         return True
 
-    # --- BÉRLÉS (🔥 + NÉV) ---
+    # --- BÉRLÉS---
     def auto_berles(self, rendszam, datum, nev):
         auto = self.auto_keres(rendszam)
 

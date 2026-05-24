@@ -1,6 +1,5 @@
 from models.SzemelyAuto import Szemelyauto
 from models.TeherAuto import Teherauto
-from models.Berles import Berles
 from models.AutoKolcsonzes import Autokolcsonzo
 
 
